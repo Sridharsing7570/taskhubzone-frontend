@@ -6,6 +6,12 @@ const nav = [
   { name: "Browse Jobs", path: "#" },
 ];
 
+const selctedUser = [
+  { name: "House Owner", path: "#", icon: Home },
+  { name: "As Worker", path: "#", icon: PenTool },
+  { name: "As Contractor", path: "#", icon: Building },
+];
+
 const Navigation = ({ isMenuOpen, setIsMenuOpen }) => (
   <nav className="bg-white shadow-sm">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,24 +54,15 @@ const Navigation = ({ isMenuOpen, setIsMenuOpen }) => (
               </svg>
             </button>
             <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 hidden group-hover:block">
-              <a
-                href="#"
-                className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >
-                <Home className="h-4 w-4 mr-2" /> As House Owner
-              </a>
-              <a
-                href="#"
-                className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >
-                <PenTool className="h-4 w-4 mr-2" /> As Worker
-              </a>
-              <a
-                href="#"
-                className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >
-                <Building className="h-4 w-4 mr-2" /> As Contractor
-              </a>
+              {selctedUser.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.path}
+                  className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  {<item.icon className="h-4 w-4 mr-2" />} {item.name}
+                </a>
+              ))}
             </div>
           </div>
           <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
@@ -91,32 +88,27 @@ const Navigation = ({ isMenuOpen, setIsMenuOpen }) => (
     {isMenuOpen && (
       <div className="md:hidden bg-white shadow-lg rounded-b-lg">
         <div className="pt-2 pb-4 space-y-1 px-4">
-          <a href="#" className="block py-2 text-gray-600 hover:text-blue-600">
-            How It Works
-          </a>
-          <a href="#" className="block py-2 text-gray-600 hover:text-blue-600">
-            Browse Jobs
-          </a>
+          {nav.map((item, index) => (
+            <a
+              key={index}
+              href={item.path}
+              className="block py-2 text-gray-600 hover:text-blue-600"
+            >
+              {item.name}
+            </a>
+          ))}
+
           <div className="pt-2 pb-1 border-t border-gray-200 mt-2">
             <p className="text-xs text-gray-500 mb-1">Register as:</p>
-            <a
-              href="#"
-              className="block py-2 text-gray-600 hover:text-blue-600 pl-2"
-            >
-              <Home className="h-4 w-4 inline mr-2" /> House Owner
-            </a>
-            <a
-              href="#"
-              className="block py-2 text-gray-600 hover:text-blue-600 pl-2"
-            >
-              <PenTool className="h-4 w-4 inline mr-2" /> Worker
-            </a>
-            <a
-              href="#"
-              className="block py-2 text-gray-600 hover:text-blue-600 pl-2"
-            >
-              <Building className="h-4 w-4 inline mr-2" /> Contractor
-            </a>
+            {selctedUser.map((item, index) => (
+              <a
+                key={index}
+                href={item.path}
+                className="block py-2 text-gray-600 hover:text-blue-600 pl-2"
+              >
+                {<item.icon className="h-4 w-4 inline mr-2" />} {item.name}
+              </a>
+            ))}
           </div>
           <button className="mt-2 w-full bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
             Sign In
