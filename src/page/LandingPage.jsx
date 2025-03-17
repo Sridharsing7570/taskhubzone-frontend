@@ -20,6 +20,7 @@ import {
   PenTool,
 } from "lucide-react";
 import Navigation from "../components/landingpage/navigation/Navigation";
+import Footer from "../components/landingpage/footer/Footer";
 
 const LandingPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -585,116 +586,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 text-gray-400 py-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center mb-4">
-                <Home className="h-6 w-6 text-blue-400" />
-                <span className="ml-2 text-lg font-bold text-white">
-                  TaskHubZone
-                </span>
-              </div>
-              <p className="text-sm text-gray-400 mb-4">
-                Connecting house owners, workers, and contractors for home
-                services and repairs.
-              </p>
-              <p className="text-xs text-gray-500">
-                © {new Date().getFullYear()} TaskHubZone
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-white font-medium mb-4 text-sm">
-                For House Owners
-              </h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Post a Job
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Find Workers
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Find Contractors
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    How It Works
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-white font-medium mb-4 text-sm">
-                For Workers & Contractors
-              </h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Find Jobs
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Create Profile
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Worker Registration
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Contractor Registration
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-white font-medium mb-4 text-sm">About</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    About TaskHubZone
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    How It Works
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Terms of Service
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-400">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
