@@ -36,7 +36,7 @@ const Navigation = ({ isMenuOpen, setIsMenuOpen }) => (
           ))}
 
           <div className="relative group">
-            <button className="text-gray-600 hover:text-blue-600 flex items-center">
+            <button className="text-gray-600 hover:text-blue-600 cursor-pointer flex items-center">
               Register
               <svg
                 className="ml-1 w-4 h-4"
@@ -65,7 +65,7 @@ const Navigation = ({ isMenuOpen, setIsMenuOpen }) => (
               ))}
             </div>
           </div>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
+          <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors cursor-pointer">
             Sign In
           </button>
         </div>
