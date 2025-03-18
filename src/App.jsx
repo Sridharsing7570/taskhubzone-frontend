@@ -4,6 +4,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import LandingPage from "./page/LandingPage";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Dashboard from "./page/houseowner/Dashboard";
+import WorkerDashboard from "./page/worker/WorkerDashboard";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
             <Route path="/" element={<LandingPage />} />
             <Route path="/job" element={<PostJobPage />} />
             <Route path="/dashboard/houseowner" element={<Dashboard />} />
+            <Route path="/dashboard/worker" element={<WorkerDashboard />} />
           </Routes>
         </Router>
       </div>

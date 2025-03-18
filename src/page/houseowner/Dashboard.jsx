@@ -3,13 +3,12 @@ import {
   Home,
   MessageSquare,
   User,
-  Tool,
-  Clock,
   DollarSign,
   Calendar,
   Plus,
   Search,
   MapPin,
+  PenTool,
 } from "lucide-react";
 
 const Dashboard = () => {
@@ -417,7 +416,7 @@ const Dashboard = () => {
 
                     <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-2 text-sm">
                       <div className="flex items-center">
-                        <Tool className="h-4 w-4 text-gray-500 mr-1" />
+                        <PenTool className="h-4 w-4 text-gray-500 mr-1" />
                         <span>{job.category}</span>
                       </div>
                       <div className="flex items-center">
