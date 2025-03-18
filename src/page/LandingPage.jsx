@@ -1,21 +1,9 @@
 import React, { useState } from "react";
 import {
-  Menu,
-  X,
   CheckCircle,
   Home,
-  Briefcase,
-  MessageSquare,
-  Star,
-  CreditCard,
-  Users,
-  Bell,
-  Upload,
-  List,
-  MapPin,
   Search,
   Filter,
-  User,
   Building,
   PenTool,
 } from "lucide-react";
