@@ -1,3 +1,4 @@
+import { Bell, Briefcase, CreditCard, MessageSquare, Star, Users } from "lucide-react";
 import React from "react";
 
 const Feature = () => {

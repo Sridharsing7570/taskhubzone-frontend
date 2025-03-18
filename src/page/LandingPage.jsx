@@ -44,45 +44,6 @@ const LandingPage = () => {
     "Roofing",
   ];
 
-  const recentJobs = [
-    {
-      id: 1,
-      title: "Bathroom Pipe Repair",
-      category: "Plumbing",
-      budget: "$150-200",
-      location: "Downtown",
-      posted: "2 days ago",
-      urgency: "Medium",
-    },
-    {
-      id: 2,
-      title: "Living Room Painting",
-      category: "Painting",
-      budget: "$300-450",
-      location: "North Side",
-      posted: "1 day ago",
-      urgency: "Low",
-    },
-    {
-      id: 3,
-      title: "Electrical Fixture Installation",
-      category: "Electrical",
-      budget: "$100-150",
-      location: "East End",
-      posted: "5 hours ago",
-      urgency: "High",
-    },
-    {
-      id: 4,
-      title: "Backyard Landscaping",
-      category: "Landscaping",
-      budget: "$500-700",
-      location: "West Hills",
-      posted: "3 days ago",
-      urgency: "Medium",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
