@@ -3,6 +3,7 @@ import PostJobPage from "./page/PostJobPage";
 import { ErrorBoundary } from "react-error-boundary";
 import LandingPage from "./page/LandingPage";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Dashboard from "./page/houseowner/Dashboard";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/job" element={<PostJobPage />} />
+            <Route path="/dashboard/houseowner" element={<Dashboard />} />
           </Routes>
         </Router>
       </div>
