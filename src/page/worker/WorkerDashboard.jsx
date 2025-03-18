@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  Tool,
   DollarSign,
   MapPin,
   Calendar,
@@ -12,6 +11,7 @@ import {
   User,
   Bell,
   LogOut,
+  PenTool,
 } from "lucide-react";
 
 const WorkerDashboard = () => {
@@ -221,8 +221,8 @@ const WorkerDashboard = () => {
       {/* Sidebar */}
       <aside className="fixed w-16 md:w-64 h-full bg-blue-800 text-white">
         <div className="p-4 flex items-center justify-center md:justify-start">
-          <Tool className="h-8 w-8 md:mr-2" />
-          <span className="hidden md:block text-xl font-bold">WorkerPro</span>
+          <Home className="h-8 w-8 md:mr-2" />
+          <span className="hidden md:block text-xl font-bold">TaskHubZone</span>
         </div>
 
         <nav className="mt-8">
@@ -394,7 +394,7 @@ const WorkerDashboard = () => {
 
                       <div className="space-y-2 text-sm">
                         <div className="flex items-center">
-                          <Tool className="h-4 w-4 text-gray-500 mr-2" />
+                          <PenTool className="h-4 w-4 text-gray-500 mr-2" />
                           <span>{job.category}</span>
                         </div>
                         <div className="flex items-center">
@@ -509,7 +509,7 @@ const WorkerDashboard = () => {
                     </h3>
                     <div className="space-y-2 text-sm">
                       <div className="flex items-center">
-                        <Tool className="h-4 w-4 text-gray-500 mr-2" />
+                        <PenTool className="h-4 w-4 text-gray-500 mr-2" />
                         <span>{selectedJob.category}</span>
                       </div>
                       <div className="flex items-center">
